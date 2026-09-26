@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
+
+html{
+box-sizing: border-box;
+}
+
+body{
+margin: 0;
+font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+   max-width: 1440px; 
+   margin: 0px auto;
+}
+/* HEADER */
+header{
+background-color: #4694DC;
+min-height: 420px;
+padding: 82px 157px 0px;
+color: #FFF;
+}
+
+.header_title {
+    font-size: 56px;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+.header_text {
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 437px;
+    line-height: 24px;
+    margin-bottom: 47px;
+}
+.header_button {
+    border: none;
+    width: 194px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+}
+.header_button:hover {
+    background-color: #ededed;
+}
+/* Services */
+.services {
+    padding: 96px 20px 80px;
+}
+.block {
+    text-align: center;
+    margin-bottom: 64px;
+}
+.block_title {
+    letter-spacing: 3.3px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 0 22px;
+}
+.block_text {
+    max-width: 470px;
+    margin: 0 auto;
+    letter-spacing: 4%;
+    font-size: 16px;
+    line-height: 24px;
+    color: #9CA3AF;
+}
+.services_items {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 36px;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.services_item {
+    text-align: center;
+    padding: 0 16px;
+}
+.services_img {
+    display: block;
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 24px;
+    object-fit: contain;
+}
+.services_title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: auto;
+    margin: 0;
+    color: #9CA3AF;
+}
+
+/* Team */
+.team {
+    padding: 0 20px 100px;
+}
+
+.team_list {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1180px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+}
+
+.team_card {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+    padding: 22px 26px;
+}
+
+.team_photo {
+    flex: 0 0 auto;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 18px;
+}
+
+.team_name {
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 0 4px;
+}
+
+.team_role {
+    font-size: 11px;
+    color: #9CA3AF;
+    margin: 0;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+/* MEDIA */
+@media screen and (max-width: 992px) {
+    .services_items,
+    .team_list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width:768px) {
+header{
+  padding: 20px 15px;
+}
+.services {
+    padding: 60px 15px;
+}
+.services_items {
+    grid-template-columns: 1fr;
+    gap: 32px;
+}
+.team_list {
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+.team_card {
+    padding: 18px 20px;
+}
+}
+
+@media screen and (max-width:420px) {
+
+.header_title {
+    font-size: 36px;
+}
+.block_title {
+    font-size: 22px;
+}
+.team_card {
+    flex-direction: column;
+    text-align: center;
+}
+.team_photo {
+    margin: 0 0 14px;
+}
+}
