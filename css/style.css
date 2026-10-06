@@ -186,3 +186,46 @@ header{
     margin: 0 0 14px;
 }
 }
+
+
+.header_button {
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color .3s ease,
+                color .3s ease,
+                transform .3s ease,
+                box-shadow .3s ease;
+}
+.header_button:hover {
+    background-color: #222;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .25);
+}
+
+.services_item {
+    transition: transform .3s ease;
+}
+.services_item:hover {
+    transform: translateY(-6px);
+}
+.services_img {
+    transition: transform .3s ease;
+}
+.services_item:hover .services_img {
+    transform: scale(1.15);
+}
+
+.team_card {
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+.team_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, .12);
+}
+.team_photo {
+    transition: transform .3s ease;
+}
+.team_card:hover .team_photo {
+    transform: scale(1.08);
+}
